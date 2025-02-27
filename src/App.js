@@ -1,13 +1,19 @@
 import React from "react";
-import ReactDom from "react-dom/client";
 import "./App.css";
+import Navbar from "./Components/Navbar/navbar";
+import Home from "./Components/Home/home";
+import Main from "./Components/Main/main";
+import Footer from "./Components/Footer/footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <p>Working</p>
-    </div>
+    <>
+      <Navbar />
+      {/* <Home />
+      <Main />
+      <Footer /> */}
+    </>
   );
-}
+};
 
 export default App;
