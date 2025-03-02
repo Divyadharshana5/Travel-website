@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.css";
 import { MdTravelExplore } from "react-icons/md";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { TbGridDots } from "react-icons/tb";
 
 const navbar = () => {
   return (
@@ -69,7 +70,9 @@ const navbar = () => {
           </div>
         </div>
 
-        <div className="toggleNavbar"></div>
+        <div className="toggleNavbar">
+          <TbGridDots className="icon" />
+        </div>
       </header>
     </section>
   );
