@@ -29,4 +29,41 @@
   .logo {
     color: var(--blackColor);
   }
+
+  @media screen and (max-width: 768px) {
+    .navBar {
+      position: absolute;
+      background: var(--whiteColorDeam);
+      height: max-content;
+      width: 80%;
+      border-radius: 1rem;
+      top: 6rem;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 2000;
+      box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+      transition: 0.3s ease-in-out;
+
+      .navLists {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: 0.5rem 0;
+
+        .navItem {
+          padding: 0.5rem 0;
+
+          .navLink {
+            color: var(--textColor);
+            font-size: 0.9rem;
+            font-weight: 600;
+            &:hover {
+              color: var(--PrimaryColor);
+            }
+          }
+        }
+      }
+    }
+  }
 }
