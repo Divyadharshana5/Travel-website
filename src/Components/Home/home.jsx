@@ -2,6 +2,11 @@ import React from "react";
 import "./home.scss";
 import { GrLocation } from "react-icons/gr";
 import { HiFilter } from "react-icons/hi";
+import { FiFacebook } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+import { SiTripadvisor } from "react-icons/si";
+import { FaListUl } from "react-icons/fa";
+import { TbApps } from "react-icons/tb";
 
 const Home = () => {
   return (
@@ -28,7 +33,6 @@ const Home = () => {
             <label htmlFor="date">Select your date:</label>
             <div className="input flex">
               <input type="date" />
-              <GrLocation className="icon" />
             </div>
           </div>
 
@@ -45,6 +49,19 @@ const Home = () => {
           <div className="searchOptions flex">
             <HiFilter className="icon" />
             <span>MORE FILTERS</span>
+          </div>
+        </div>
+
+        <div className="homeFooterIcons flex">
+          <div className="rightIcons">
+            <FiFacebook className="icon" />
+            <FaInstagram className="icon" />
+            <SiTripadvisor className="icon" />
+          </div>
+
+          <div className="leftIcons">
+            <FaListUl className="icon" />
+            <TbApps className="icon" />
           </div>
         </div>
       </div>

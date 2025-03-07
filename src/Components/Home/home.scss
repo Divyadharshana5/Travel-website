@@ -130,11 +130,47 @@
       }
 
       .searchOptions {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 18%;
         background: var(--gradientColor);
         width: max-content;
-        border-radius: 8px;
-        padding: 5px 10px;
+        bottom: -2rem;
+        column-gap: 0.8rem;
+        padding: 9px 3rem;
+        border-radius: 3rem;
+        left: 50%;
+        transform: translate(-50%);
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          background: var(--PrimaryColor);
+        }
+        .icon {
+          font-size: 18px;
+        }
+        span {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .homeFooterIcons {
+      width: 100%;
+      justify-content: space-between;
+
+      .icon {
+        font-size: 20px;
+        margin: 0 5px;
         color: var(--whiteColor);
+        font-weight: 600;
+
+        &:hover {
+          color: var(--greyText);
+        }
       }
     }
   }
