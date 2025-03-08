@@ -1,5 +1,5 @@
 import React from "react";
-import "./main.css";
+import "./main.scss";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { LuClipboardCheck } from "react-icons/lu";
 import img from "../../Assets/img.jpg";
