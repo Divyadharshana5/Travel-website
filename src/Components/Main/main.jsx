@@ -1,5 +1,7 @@
 import React from "react";
 import "./main.css";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { LuClipboardCheck } from "react-icons/lu";
 import img from "../../Assets/img.jpg";
 
 const Data = [
@@ -14,8 +16,7 @@ const Data = [
       "The epitome of romance,Bora Bora is one of the best travel destination in the world.This place is known for its luxurious stays and adventurous activities.",
   },
 
-  {
-    /* {
+  /* {
     id: 2,
     imgSrc: img2,
     destTitle: "Cappadocia",
@@ -102,7 +103,6 @@ const Data = [
     description:
       "A city in central Mecico.Guanajuato is known for its history of silver mining and colonial architecture.The houses in the city are very attactively painted with the most bright colors available.Always Welcome.",
   },*/
-  },
 ];
 const main = () => {
   return (
@@ -112,22 +112,45 @@ const main = () => {
       </div>
 
       <div className="secContent grid">
-        {Data.map(
-          ({ id, imgSrc, destTitle, location, grade, fees, description }) => {
-            return (
-              <div key={id} className="singleDestination">
-                <div className="imageDiv">
-                  <img src={imgSrc} alt={destTitle} />
-                </div>
+        {Data &&
+          Data.map(
+            ({ id, imgSrc, destTitle, location, grade, fees, description }) => {
+              return (
+                <div key={id} className="singleDestination">
+                  <div className="imageDiv">
+                    <img src={imgSrc} alt={destTitle} />
+                  </div>
 
-                <div className="cardInfo">
-                  <h4 className="destTitle">{destTitle}</h4>
-                  <span className="continent flex"></span>
+                  <div className="cardInfo">
+                    <h4 className="destTitle">{destTitle}</h4>
+                    <span className="continent flex">
+                      <HiOutlineLocationMarker className="icon" />
+                      <span className="name">{location}</span>
+                    </span>
+
+                    <div className="fees flex">
+                      <div className="grade">
+                        <span>
+                          {grade} <small>+1</small>
+                        </span>
+                      </div>
+
+                      <div className="price">
+                        <h5>{fees}</h5>
+                      </div>
+                    </div>
+                    <div className="desc">
+                      <p>{description}</p>
+                    </div>
+                    <button className="btn flex">
+                      DETAILS
+                      <LuClipboardCheck className="icon" />
+                    </button>
+                  </div>
                 </div>
-              </div>
-            );
-          }
-        )}
+              );
+            }
+          )}
       </div>
     </section>
   );
