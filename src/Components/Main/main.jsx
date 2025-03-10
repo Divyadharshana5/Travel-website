@@ -3,6 +3,14 @@ import "./main.scss";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { LuClipboardCheck } from "react-icons/lu";
 import img from "../../Assets/img.jpg";
+import img2 from "../../Assets/img2.jpg";
+import img3 from "../../Assets/img3.jpg";
+import img4 from "../../Assets/img4.jpg";
+import img5 from "../../Assets/img5.jpg";
+import img6 from "../../Assets/img6.jpg";
+import img7 from "../../Assets/img7.jpg";
+import img8 from "../../Assets/img8.jpg";
+import img9 from "../../Assets/img9.jpg";
 
 const Data = [
   {
@@ -16,7 +24,7 @@ const Data = [
       "The epitome of romance,Bora Bora is one of the best travel destination in the world.This place is known for its luxurious stays and adventurous activities.",
   },
 
-  /* {
+  {
     id: 2,
     imgSrc: img2,
     destTitle: "Cappadocia",
@@ -102,7 +110,7 @@ const Data = [
     fees: "$1100",
     description:
       "A city in central Mecico.Guanajuato is known for its history of silver mining and colonial architecture.The houses in the city are very attactively painted with the most bright colors available.Always Welcome.",
-  },*/
+  },
 ];
 const main = () => {
   return (
