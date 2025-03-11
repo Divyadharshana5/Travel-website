@@ -46,7 +46,7 @@ const footer = () => {
               reprehenderit quibusdam magnam similique quas est architecto.
             </div>
 
-            <div className="footerSocials">
+            <div className="footerSocials flex">
               <AiOutlineTwitter className="icon" />
               <AiFillYoutube className="icon" />
               <AiFillInstagram className="icon" />
