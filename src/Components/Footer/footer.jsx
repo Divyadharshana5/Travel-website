@@ -24,14 +24,18 @@ function Footer() {
       </div>
       <div className="seaContent container">
         <div className="contactDiv flex">
-          <div className="text">
+          <div data-aos="fade-up" className="text">
             <small>KEEP IN TOUCH</small>
             <h2>Travel with us</h2>
           </div>
 
           <div className="inputDiv flex ">
-            <input type="text" placeholder="Enter Email Address" />
-            <button className="btn flex" type="submit">
+            <input
+              data-aos="fade-up"
+              type="text"
+              placeholder="Enter Email Address"
+            />
+            <button data-aos="fade-up" className="btn flex" type="submit">
               SEND <FiSend className="icon" />
             </button>
           </div>
@@ -45,7 +49,7 @@ function Footer() {
               </a>
             </div>
 
-            <div className="footerParagraph">
+            <div data-aos="fade-up" className="footerParagraph">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
               quisquam asperiores quis aliquam quae molestias illum. Alias
               eligendi cupiditate necessitatibus Lorem ipsum dolor sit, amet
@@ -53,7 +57,7 @@ function Footer() {
               reprehenderit quibusdam magnam similique quas est architecto.
             </div>
 
-            <div className="footerSocials flex">
+            <div data-aos="fade-up" className="footerSocials flex">
               <AiOutlineTwitter className="icon" />
               <AiFillYoutube className="icon" />
               <AiFillInstagram className="icon" />
@@ -62,7 +66,11 @@ function Footer() {
           </div>
 
           <div className="footerLinks grid">
-            <div className="linkGroup">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="linkGroup"
+            >
               <span className="groupTitle">OUR AGENCY</span>
 
               <li className="footerList flex">
@@ -91,7 +99,11 @@ function Footer() {
               </li>
             </div>
 
-            <div className="linkGroup">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="4000"
+              className="linkGroup"
+            >
               <span className="groupTitle">PARTNERS</span>
 
               <li className="footerList flex">
@@ -120,7 +132,11 @@ function Footer() {
               </li>
             </div>
 
-            <div className="linkGroup">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="5000"
+              className="linkGroup"
+            >
               <span className="groupTitle">LAST MINUTE</span>
 
               <li className="footerList flex">
