@@ -12,7 +12,7 @@ const footer = () => {
   return (
     <section className="footer">
       <div className="videoDiv">
-        <video src="/v1.mp4" muted autoPlay loop type="video/mp4"></video>
+        <video src="/v3.mp4" muted autoPlay loop type="video/mp4"></video>
       </div>
 
       <div className="seaContent container">
