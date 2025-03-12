@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./main.scss";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { LuClipboardCheck } from "react-icons/lu";
@@ -11,6 +11,9 @@ import img6 from "../../Assets/img6.jpg";
 import img7 from "../../Assets/img7.jpg";
 import img8 from "../../Assets/img8.jpg";
 import img9 from "../../Assets/img9.jpg";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Data = [
   {
@@ -112,7 +115,13 @@ const Data = [
       "A city in central Mecico.Guanajuato is known for its history of silver mining and colonial architecture.The houses in the city are very attactively painted with the most bright colors available.Always Welcome.",
   },
 ];
-const main = () => {
+function Main() {
+  //Lets create a react hook to add a scroll animation.....
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className="main container section">
       <div className="secTitle">
@@ -124,7 +133,7 @@ const main = () => {
           Data.map(
             ({ id, imgSrc, destTitle, location, grade, fees, description }) => {
               return (
-                <div key={id} className="singleDestination">
+                <div key={id} data-aos="fade-up" className="singleDestination">
                   <div className="imageDiv">
                     <img src={imgSrc} alt={destTitle} />
                   </div>
@@ -162,6 +171,6 @@ const main = () => {
       </div>
     </section>
   );
-};
+}
 
-export default main;
+export default Main;

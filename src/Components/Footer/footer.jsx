@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./footer.scss";
 import { FiSend } from "react-icons/fi";
 import { MdTravelExplore } from "react-icons/md";
@@ -8,7 +8,15 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTripadvisor } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
 
-const footer = () => {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+function Footer() {
+  //Lets create a react hook to add a scroll animation.....
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section className="footer">
       <div className="videoDiv">
@@ -21,7 +29,7 @@ const footer = () => {
             <h2>Travel with us</h2>
           </div>
 
-          <div className="inputDiv flex">
+          <div className="inputDiv flex ">
             <input type="text" placeholder="Enter Email Address" />
             <button className="btn flex" type="submit">
               SEND <FiSend className="icon" />
@@ -150,6 +158,6 @@ const footer = () => {
       </div>
     </section>
   );
-};
+}
 
-export default footer;
+export default Footer;
