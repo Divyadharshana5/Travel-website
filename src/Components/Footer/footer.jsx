@@ -50,11 +50,10 @@ function Footer() {
             </div>
 
             <div data-aos="fade-up" className="footerParagraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-              quisquam asperiores quis aliquam quae molestias illum. Alias
-              eligendi cupiditate necessitatibus Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Sint facilis impedit ullam odio
-              reprehenderit quibusdam magnam similique quas est architecto.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus labore commodi aliquam nihil, blanditiis dolores
+              illum laudantium dolore enim dolor id ipsam molestiae iusto
+              explicabo ratione fugiat dolorum tenetur praesentium.
             </div>
 
             <div data-aos="fade-up" className="footerSocials flex">
@@ -164,11 +163,11 @@ function Footer() {
                 Oceania
               </li>
             </div>
+          </div>
 
-            <div className="footerDiv flex">
-              <small>BEST TRAVEL WEBSITE THEME</small>
-              <small>COPYRIGHTS RESERVED - ISRATECH 2022</small>
-            </div>
+          <div className="footerDiv flex">
+            <small>BEST TRAVEL WEBSITE THEME</small>
+            <small>COPYRIGHTS RESERVED - ISRATECH 2022</small>
           </div>
         </div>
       </div>

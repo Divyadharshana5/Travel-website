@@ -101,7 +101,7 @@
         gap: 0.5rem;
 
         .icon {
-          font-size: 18px;
+          font-size: -18px;
         }
       }
     }
@@ -183,7 +183,7 @@
             }
             &:hover {
               color: var(--PrimaryColor);
-              transform: translateX(7px);
+              transform: translate(7px);
 
               .icon {
                 color: var(--SecondaryColor);
@@ -236,20 +236,19 @@
 @media screen and (min-width: 660px) {
   .footer {
     .seaContent {
-      .contactDiv {
-        flex-direction: row;
-        justify-content: space-between;
+      .footerCard {
+        .footerLinks {
+          grid-template-columns: repeat(3, 1fr);
+          padding-bottom: 1rem;
+        }
 
-        .inputDiv {
-          width: max-content;
+        .footerDiv {
+          justify-content: space-between;
           flex-direction: row;
-          justify-content: flex-start;
 
-          input {
-            width: 60%;
-          }
-          .btn {
-            width: max-content;
+          small {
+            font-size: 14px;
+            color: var(--whiteColor);
           }
         }
       }
@@ -266,7 +265,7 @@
 
         .footerLinks {
           grid-template-columns: repeat(3, 1fr);
-          padding-bottom: 1rem;
+          padding-bottom: 3rem;
         }
       }
     }
@@ -300,7 +299,7 @@
           .linkGroup {
             .footerList {
               font-size: 16px;
-              padding: 5rem 0;
+              padding: 5px 0;
             }
           }
         }
